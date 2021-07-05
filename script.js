@@ -1,0 +1,24 @@
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+function onLoginBtnClick(){
+    /*console.log(loginInput.value);*/ //input에 적은 value를 console.log 해준다.
+    /*if (username === "") {
+        alert("Please write your name");
+    }
+    else if(username.length > 15) {
+        alert("Your name is too long");
+    } js로 일일이 유저를 확인하는 것도 좋지만, html의 기능을 이용하는 것이 훨씬 좋다. (required, maxlength 등)*/
+    const username = loginInput.value;
+    console.log(username);
+}
+function onLoginSubmit(event){
+    event.preventDefault(); //기본 행동(기본적으로 발생하는 행동)이 발생되지 않도록 막는 함수. event object 중 하나이며, 이 함수를 불러오면 디폴트 행동이 발생되지 않는다.
+    console.log(loginInput.value) ;
+/*argument는 그 공간만 만들어주면 방금 일어난 event에 대한 정보를 채워넣는다. */
+}
+
+loginForm.addEventListener("submit", onLoginSubmit); //eventlistener 안에 있는 함수는 직접 실행하지 않는다.
+/* 브라우저는 이벤트가 발생될 경우 실행될 함수를 호출하고, 브라우저가 함수를 실행시키고 있긴 하지만 event로부터 정보를 받아서 함수를 실행시킨다.
+event가 발생할때 함수를 호출하는데, 첫 번째 인자로써 추가적인 정보를 가진 채 호출하게 된다.*/
