@@ -1,5 +1,5 @@
-const quote = document.querySelector("quote span:fitst-child");
-const author = document.querySelector("quote span:last-child");
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
 
 const quotes = [
 {

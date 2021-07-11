@@ -10,4 +10,4 @@ const bgImage = document.createElement("img"); //js에서 element를 만들어 h
 
 bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImage); //appndchild는 body에 html을 추가한다.
+document.body.appendChild(bgImage); //appndchild는 body에 html을 추가한다.(append는 맨 뒤, prepend는 가장 위에 오게 한다.)
