@@ -1,0 +1,12 @@
+#clock {
+  float: right;
+  margin-top: -10px;
+  margin-right: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-stretch: expanded;
+}
+#clock:hover {
+  text-decoration: underline;
+}

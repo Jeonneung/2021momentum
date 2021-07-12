@@ -1,0 +1,10 @@
+#login-form {
+  align-content: center;
+}
+#login-form input {
+  text-align: center;
+  width: 30%;
+  height: 20%;
+}
+#login-form button {
+}
