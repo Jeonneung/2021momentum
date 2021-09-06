@@ -1,6 +1,3 @@
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
-
 const quotes = [
   {
     quote: "Life isn't fair. It's just fairer than death, that's all.",
@@ -50,14 +47,17 @@ const quotes = [
   },
 ];
 
-Math.floor(Math.random() * 10);
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]; //array의 길이를 알아야 해서 번거롭다. 그러므로 length를 이용해 길이를 구한다.
+
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
 
-/*Math.random() * 10 //정수가 0에서 10까지인 float(소수점을 가지는 수)의 랜덤 호출.
+/* Math.random() * 10 //정수가 0에서 10까지인 float(소수점을 가지는 수)의 랜덤 호출. Math.random()은 0부터 1까지의 랜덤한 수를 불러낸다.
 Math.random()은 0에서 1까지의 랜덤 float.
-Math.round() //소수점을 제거한 수를 돌려준다.
+Math.round() //소수점을 제거한 수를 돌려준다.(반올림)
 Math.ceil() //소수점이 있는 수를 올림한다.
 Math.floor() //소수점이 있는 수를 내림한다.
-console.log(quotes[0-9]);*/
+console.log(quotes[0-9]);
+quotes.length는 나열의 길이를 센다.*/
